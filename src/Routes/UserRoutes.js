@@ -1,0 +1,20 @@
+import { jsx as _jsx, jsxs as _jsxs } from "react/jsx-runtime";
+import { Route, Routes } from "react-router-dom";
+import Home from "../pages/users/Home";
+import Login from "../pages/users/Login";
+import Register from "../pages/users/Register";
+import Otp from "../pages/users/Otp";
+import Trainers from "@/pages/users/Trainers";
+import DemoPage from "@/components/ui/page";
+import SubscriptionPlan from "@/pages/users/SubscriptionPlan";
+import TrainerDetails from "@/pages/users/TrainerDetails";
+import ProtectedRoute from "./ProtectedRoute";
+import Video from "@/pages/users/Video";
+import VideoDetail from "@/pages/users/videoDetail";
+import Chat from "@/pages/users/Chat";
+import Diets from "@/pages/users/Diet";
+import DietDetail from "@/pages/users/DietDetails";
+const UserRoutes = () => {
+    return (_jsxs(Routes, { children: [_jsx(Route, { path: "/", element: _jsx(Home, {}) }), _jsx(Route, { path: "/login", element: _jsx(Login, {}) }), _jsx(Route, { path: "/register", element: _jsx(Register, {}) }), _jsx(Route, { path: "/otp", element: _jsx(Otp, {}) }), _jsx(Route, { path: "/trainers", element: _jsx(ProtectedRoute, { children: _jsx(Trainers, {}) }) }), _jsx(Route, { path: "/subscriptionplan/:trainerId", element: _jsx(ProtectedRoute, { children: _jsx(SubscriptionPlan, {}) }) }), _jsx(Route, { path: "/trainerdetails/:id", element: _jsx(ProtectedRoute, { children: _jsx(TrainerDetails, {}) }) }), _jsx(Route, { path: "/video", element: _jsx(ProtectedRoute, { children: _jsx(Video, {}) }) }), _jsx(Route, { path: "/diets", element: _jsx(ProtectedRoute, { children: _jsx(Diets, {}) }) }), _jsx(Route, { path: "/video/:id", element: _jsx(ProtectedRoute, { children: _jsx(VideoDetail, {}) }) }), _jsx(Route, { path: "/diet/:id", element: _jsx(ProtectedRoute, { children: _jsx(DietDetail, {}) }) }), _jsx(Route, { path: "/table", element: _jsx(DemoPage, {}) }), _jsx(Route, { path: "/message", element: _jsx(Chat, {}) })] }));
+};
+export default UserRoutes;

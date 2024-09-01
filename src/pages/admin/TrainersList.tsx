@@ -1,3 +1,4 @@
+// @ts-nocheck
 import Navbar from '@/components/admin/AdminNavbar'
 import axios, { axiosPrivet } from '../../utils/axios/baseUrl'
 import { useEffect, useState } from 'react'

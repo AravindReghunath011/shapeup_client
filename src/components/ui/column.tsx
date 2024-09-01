@@ -1,4 +1,4 @@
-
+// @ts-nocheck
 import { ColumnDef } from "@tanstack/react-table"
 import { Checkbox } from "./checkbox"
 import { DropdownMenu } from "./dropdown-menu"

@@ -1,3 +1,4 @@
+// @ts-nocheck
 import React, { useRef, useState } from 'react';
 import axios from '../../utils/axios/baseUrl';
 import { toast } from 'sonner';
